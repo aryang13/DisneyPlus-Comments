@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "DisneyComment",
+    "description": "Comment on Disney Plus shows",
+    "version": "1.0",
+    "host_permissions": ["http://localhost:8080/*"],
+    "permissions": ["storage", "tabs"],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/main.js",
+                "scripts/client.js",
+                "scripts/comments.js",
+                "scripts/commentWindow.js",
+                "scripts/images.js"
+            ],
+            "css": ["styles.css"],
+            "matches": [
+                "https://disneyplus.com/*",
+                "https://www.disneyplus.com/*"
+            ]
+        }
+    ]
+}

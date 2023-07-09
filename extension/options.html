@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Test Extension Options</title>
+  </head>
+  <body>
+    <div id="sign-in">
+        <label>
+            Email: <input type="input" id="si-email" />
+        </label>
+        <label>
+            Password: <input type="password" id="si-password" />
+        </label>
+        <span id="si-message"></span>
+        <button id="do-sign-in">Sign in</button>
+        <button id="show-register">or click here to register</button>
+    </div>
+    <div id="register" hidden>
+        <label>
+            First name: <input type="input" id="r-firstname" />
+        </label>
+        <label>
+            Last name: <input type="input" id="r-lastname" />
+        </label><br/>
+
+        <label>
+            Email: <input type="input" id="r-email" />
+        </label>
+        <label>
+            Username: <input type="input" id="r-username" />
+        </label>
+        <label>
+            Password: <input type="password" id="r-password" />
+        </label><br/>
+
+        <label>
+            Country: <input type="input" id="r-country" />
+        </label>
+        <label>
+            Province: <input type="input" id="r-province" />
+        </label>
+        <label>
+            City: <input type="input" id="r-city" />
+        </label>
+        <label>
+            Postal code: <input type="input" id="r-postalcode" />
+        </label>
+        <span id="r-message"></span>
+        <button id="do-register">Register</button>
+        <button id="show-sign-in">Back to sign-in</button>
+    </div>
+    <div id="profile" hidden>
+        <button id="do-sign-out">Sign out</button>
+        <br>
+
+        <img id="p-img">
+
+        <label>
+            Upload profile picture: <input id="p-img-upload" type="file" accept="image/*"> <button id="p-do-img-upload">Upload</button>
+        </label>
+        
+        <br />
+
+        <b id="p-username"></b>: <span id="p-name"></span>
+    </div>
+
+    <script src="scripts/client.js"></script>
+    <script src="scripts/images.js"></script>
+    <script src="scripts/options.js"></script>
+  </body>
+</html>

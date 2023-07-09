@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forums</title>
+        <link rel="stylesheet" href="forumstyles.css" />
+    </head>
+    <body>
+        <div id="similar-users">
+            <p>Users in all the same forums as you:</p>
+        </div>
+        <div id="main">
+            <div id="new-forum">
+                <input type="text" id="new-forum-name" />
+                <button id="new-forum-button">Add new forum</button>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="forum-heading">Select a forum</h1>
+            <button id="join-forum" hidden>Join Forum</button>
+            <div id="top-commenters"></div>
+
+            <div id="forum-input" hidden>
+                <p>Write a comment:</p>
+                <textarea id="forum-text" rows="5" cols="50"></textarea>
+                <button id="forum-button">Post</button>
+            </div>
+
+            <div id="content"></div>
+        </div>
+        <script src="scripts/client.js"></script>
+        <script src="scripts/forum.js"></script>
+    </body>
+</html>

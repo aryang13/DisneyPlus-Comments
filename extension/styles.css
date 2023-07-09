@@ -1,0 +1,70 @@
+.comment {
+    margin: 5px;
+    margin-bottom: 30px;
+}
+.like-button {
+    position: relative;
+    float: right;
+}
+.reply-button {
+    position: relative;
+    float: left;
+}
+
+#reply-window {
+    z-index: 100;
+    width: 40%;
+    height: 75%;
+    background-color: rgb(228, 228, 243);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.chat {
+    top: 0;
+    position: absolute;
+    /* border: red 1px solid; */
+    right: 0;
+    height: 100%;
+    background: rgb(184, 184, 184);
+}
+
+#chat-toggle {
+    height: 40px;
+    width: 10px;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    background: rgba(250, 251, 194, 0.647);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.comment-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(214, 214, 214);
+}
+
+.reply-container {
+    margin-bottom: 50px;
+    /* border: yellowgreen 1px solid; */
+    height: 68%;
+    overflow: scroll;
+    border-left: solid rgba(148, 148, 148, 0.411) 3px;
+    margin-left: 5px;
+    padding-left: 3px;
+}
+
+.comment-container {
+    margin-bottom: 50px;
+    /* border: yellowgreen 1px solid; */
+    height: 85%;
+    overflow: scroll;
+}
